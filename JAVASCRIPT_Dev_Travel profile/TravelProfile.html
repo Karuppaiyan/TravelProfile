@@ -1,0 +1,28 @@
+<!doctype html> 
+<head>
+<title>2Adpro</title>
+<link rel='stylesheet' href='css/styles.css' />
+    <script src='init.js'></script>
+	 <script src='js/jquery.js'></script>
+	 <script src='js/jquery.matrix.js'></script>
+	 <script src='js/jquery.ad2profxnz.js'></script>
+</head>
+
+<body>
+
+<div id='quiz-container'></div>
+	 <script>
+ 
+
+ $('#quiz-container').ad2profxnz({
+			questions: init.questions, 
+			resultComments: init.resultComments,
+			twitterStatus: 'Woo! I got {score} on the quiz.',
+			 weightageMessage : ['Food Fanatic', 'Nature Seeker', 'Eco Indulger', 'Active Adventurer', 'Coastal Cruiser'],
+                        weightageImage : ['demo/foodfanatic.jpg', 'demo/Naturalw.jpg', 'demo/ecolux.jpg', 'demo/activeadv.jpg', 'demo/coastalcru.jpg'],
+                        competitionForm : 'competition.php'
+		});
+ </script>
+
+</body>
+</html>
